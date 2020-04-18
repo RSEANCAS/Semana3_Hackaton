@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <section class="contact-section">
         <h2>CONTACTO</h2>
         <form action="" id="frmContacto">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Apellido">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Teléfono">
-            <textarea placeholder="Descripción"></textarea>
-            <button>Enviar</button>
+            <div class="row">
+                <input type="text" placeholder="Nombre" pattern="^[a-zA-Z]+" required>
+                <input type="text" placeholder="Apellido" pattern="^[a-zA-Z]+" required>
+            </div>
+            <div class="row">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Teléfono" required>
+            </div>
+            <div class="row">
+                <textarea placeholder="Descripción" rows="10" required></textarea>
+            </div>
+            <div class="row">
+                <button class="btn">Enviar</button>
+            </div>
         </form>
     </section>
 </body>
