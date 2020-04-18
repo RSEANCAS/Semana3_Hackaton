@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="field">
+                <label>Nombre: </label>
+                <input type="text" pattern="^[a-zA-Z]+" title="Sebe ingresar sólo texto" placeholder="Nombre" required />
+            </div>
+            <div class="field">
+                <label>Apellido: </label>
+                <input type="text" pattern="^[a-zA-Z]+" title="Sebe ingresar sólo texto" placeholder="Apellido" />
+            </div>
+            <div class="field">
+                <label>Edad: </label>
+                <input type="number" min="18" max="80" value="18" title="Debe ingresar sólo números y el valor debe estar entre los 18 y 80" placeholder="Edad" />
+            </div>
+            <div class="field">
+                <label>Sexo: </label>
+                <label>
+                    Masculino
+                    <input type="radio" name="sexo" checked required />
+                </label>
+                <label>
+                    Femenino
+                    <input type="radio" name="sexo" required />
+                </label>
+            </div>
+            <div class="field">
+                <label>DNI: </label>
+                <input type="text" pattern="^[a-zA-Z0-9]+" minlength="8" maxlength="8" placeholder="Edad" required />
+            </div>
+            <div class="field">
+                <label>Email: </label>
+                <input type="email" placeholder="Correo" required />
+            </div>
+            <div>
+                <button>Guardar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
